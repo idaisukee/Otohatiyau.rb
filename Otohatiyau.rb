@@ -21,4 +21,14 @@ module Otohatiyau
 		[q, r]
 	end
 
+
+	def self.inverse_otohatiyau(b, q, r)
+		a = 0
+		b.each_with_index do |v, k|
+			a += v * q[k]
+		end
+		a += r[-1]
+		a
+	end
+
 end
