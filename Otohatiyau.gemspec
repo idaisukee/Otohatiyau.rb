@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'Otohatiyau'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2017-08-21'
   s.summary     = "Otohatiyau calculation"
   s.description = "Otohatiyau calc gem"
