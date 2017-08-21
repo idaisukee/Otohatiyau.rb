@@ -1,4 +1,4 @@
-module Otohatiyau
+class Otohatiyau
 
 	def self.otohatiyau(a, b)
 		q = Array.new
