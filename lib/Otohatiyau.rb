@@ -1,3 +1,5 @@
+require 'matrix'
+
 class Otohatiyau
 
 	def self.otohatiyau(a, b)
@@ -22,6 +24,11 @@ class Otohatiyau
 	end
 
 
+	def self.essence_otohatiyau(a, b)
+		otohatiyau = Otohatiyau::otohatiyau(a, b)
+		[otohatiyau[0], otohatiyau[-1][-1]]
+	end
+	
 	def self.inverse_otohatiyau(b, q, r)
 		a = 0
 		b.each_with_index do |v, k|
@@ -31,4 +38,8 @@ class Otohatiyau
 		a
 	end
 
+	def self.essence_inverse_otohatiyau(a, b)
+		Vector[*a[0]].inner_product(Vector[*b]) + a[1]
+	end		
 end
+
